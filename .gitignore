@@ -1,0 +1,100 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.swp
+*.sln.docstates
+
+# Logs
+*.log
+*.tlg
+*.log2
+
+# Visual Studio Code directories and files
+.vscode/
+*.code-workspace
+
+# Rider files
+.idea/
+
+# Visual Studio directories and files
+.vs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.ncb
+*.opendb
+*.ldb
+*.DS_Store
+
+# Recycle Bin used by Visual Studio
+$RECYCLE.BIN/
+
+# ASP.NET temporary files
+clientbin/
+wwwroot/node_modules/
+wwwroot/lib/
+
+# Node modules
+node_modules/
+
+# Packages
+*.nupkg
+*.snupkg
+
+# Generated files
+*.generated.cs
+*.g.cs
+*.g.i.cs
+*.designer.cs
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.exp
+*.idb
+*.ipdb
+*.iobj
+*.scc
+
+# Coverage results
+*.coverage
+*.coveragexml
+*.coverageresults
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+
+# Certificates
+*.pfx
+*.p12
+
+# Publish artifacts
+publish/
+publishprofiles/
+
+# Resharper
+*.DotSettings.user
+*.DotSettings
+
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows thumbnail cache
+Thumbs.db
+
+# JetBrains Rider
+.idea/
