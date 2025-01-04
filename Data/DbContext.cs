@@ -7,8 +7,8 @@ namespace Reporto.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
-        public DbSet<User>? Users { get; set; }
-        public DbSet<Report>? Reports { get; set; }
+        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Report> Reports { get; set; } = null!;
     }
 
     public class User
