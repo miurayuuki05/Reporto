@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Reporto.Data;
 
+
+
 namespace Reporto.Pages
 {
     public class RegisterModel : PageModel
@@ -24,11 +26,11 @@ namespace Reporto.Pages
 
         public  Task<IActionResult> OnPostRegister()
         {
-            Console.WriteLine("Registering user");
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(Password);
             _context?.Users.Add(new User
             {
                 Username = Username,
-                Password = Password
+                Password = hashedPassword
             });
             
             _context?.SaveChanges();

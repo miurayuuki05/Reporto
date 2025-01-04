@@ -29,9 +29,16 @@ namespace Reporto.Pages
                 return Page();
             }
 
-            var user = _context?.Users.FirstOrDefaultAsync(u => u.Username == Username && u.Password == Password).Result;
+            var user = _context?.Users.FirstOrDefaultAsync(u => u.Username == Username).Result;
 
             if (user == null)
+            {
+                return Page();
+            }
+            
+            var valid = BCrypt.Net.BCrypt.Verify(Password, user?.Password);
+
+            if (!valid)
             {
                 return Page();
             }
