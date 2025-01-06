@@ -30,3 +30,12 @@ To use Reporto, you’ll need:
    ```bash
    git clone https://github.com/your-username/reporto.git
    cd reporto
+2. Open the solution in your IDE:
+   ```bash
+   reporto.sln
+3. Restore the dependencies:
+   ```bash
+   dotnet restore
+4. Build the solution:
+   ```bash
+   dotnet build
