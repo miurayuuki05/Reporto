@@ -1,0 +1,29 @@
+﻿@page
+@model DashboardModel
+@{
+}
+
+<div class="container">
+    <h1>Dashboard</h1>
+    <p>Welcome to your dashboard.</p>
+    <p>User</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Users != null)
+            {
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Username</td>
+                    </tr>
+                }
+            }
+        </tbody>    
+</div>
